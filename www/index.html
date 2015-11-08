@@ -146,7 +146,7 @@
                 <h4 id="find-name">Nombre</h4>
                 <li id="find-place">Lugar de almacenamiento</li>
             </div>
-        </div>
+        
         <ul>
             <div id="home-finds">
                 <div id="find-img-container">
@@ -217,7 +217,8 @@
                     <li id="find-place">Lugar de almacenamiento cuatro que puede ser largo</li>
                 </div>
             </div>
-        </ul>   
+        </ul> 
+        </div>  
         <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-position="fixed">
             <div data-role="navbar" class="ui-navbar ui-mini" role="navigation">
                 <ul class="ui-grid-b">
@@ -254,7 +255,7 @@
             </div>
             <div data-role="content" id="menu-container">
                 <div id="menu-element">
-                    <a href="home" id="menu-title"><img src="img/finds.png" id="menu-icon">Mis Finds</a>
+                    <a href="#home" id="menu-title"><img src="img/finds.png" id="menu-icon">Mis Finds</a>
                 </div>
                 <div id="menu-element">
                     <a href="#newfind" id="menu-title"><img src="img/add.png" id="menu-icon">Nuevo Find</a>
@@ -333,10 +334,9 @@
 
         <div data-role="content">
         <form>
-        Nombre:
-            <input type="text" id="newfind-name" maxlength="50">
-            <div id="camera">
+        Nombre:<input type="text" id="newfind-name" maxlength="50">
 
+            <div id="camera">
                 <button class="camera-control" onclick="capturePhoto();">Tomar Foto</button>
                 <div style="text-align:center;margin:20px;">
                     <img id="cameraPic" src="" style="width:auto;max-height:120px;"></img>
@@ -344,20 +344,24 @@
                 <button href="#" class="camera-control" onclick="GetLocation();">Definir ubicacion</button>
                 Tu ubicación Actual: <p id="geolocation"></p>
             </div>
+
             <input type="submit" value="GUARDAR">
         </form>    
         <br/>
         <a href="#home" id="cancel-link" class="center"> Cancelar </a>
         </div>
+
     </div>
+
+
 
 
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
+<!--        <script type="text/javascript">
             app.initialize();
-        </script>
+        </script> -->
     </body>
 </html>
