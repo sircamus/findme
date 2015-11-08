@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+
+        <title>Find me</title>
+    </head>
+    <body>
+
+    <!-- **************** LOGIN ***************** -->
+
+        <div data-role="page" id="main">
+            <div data-role="content">
+                <img src="img/logo.png" alt="Find me" id="logo">
+            </div>
+            <div data-role="content" class="login">
+                <form id="login-form" method="POST" action="">
+                    <input type="text" id="user" name="id" value="" placeholder="Usuario">
+                    <input type="password" id="pass" name="pass" value="" placeholder="Contraseña">
+                    <input type="submit" value="ENTRAR" id="btnEntrar"> 
+                </form>
+                <br/>
+                <a href="#registro" id="registrarse" data-transition="slide">Registrarse</a>
+            </div>
+        </div>
+
+    <!-- **************** REGISTRO ***************** -->
+
+        <div data-role="page" id="registro">
+            <div data-role="header">
+            <a href="#main" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-transition="slide"></a>
+                <h1 class="htitles">NUEVA CUENTA</h1>
+            </div>
+            <div data-role="content" class="reg-form">
+            <p class="textNrml">¡Llena todos los campos para comenzar la aventura!</p>
+            <form id="registro-form" method="POST" action="">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" data-clear-btn="true">
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" data-clear-btn="true">
+                <input type="email" name="email" id="email" placeholder="Email" data-clear-btn="true">
+                <input type="password" name="contra" id="contra" placeholder="Contraseña" data-clear-btn="true">
+                <p/>
+                <input type="submit" id="btnReg" value="CONTINUAR" data-transition="slide">
+                <a href="#bienvenido">.</a>
+            </form>
+            </div>
+        </div>
+
+
+    <!-- **************** INTRO ***************** -->
+
+        <div data-role="page" id="bienvenido">
+            <div data-role="content">
+                <img src="img/heart.png" id="heart-icon">
+                <h1 class="htitles">¡Bienvenid@, -user-!</h1>
+            </div>
+            <div id="descripcion">
+                <p>Esta es una breve descripción de las características principales de la App</p>
+                <a href="#desc1" id="nextDesc" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-notext ui-btn-b ui-btn-inline"></a> 
+                <br/>
+                <a href="#home"><small>Saltar</small></a>
+            </div>
+        </div>
+
+        <div data-role="page" id="desc1">
+            <div data-role="content">
+                <img src="img/heart.png" id="heart-icon">
+                <h1 class="htitles">Caracteristica 1</h1>
+            </div>
+            <div id="descripcion">
+                <p>Esta es una breve descripción de las características principales de la App</p>
+                <a href="#bienvenido" id="nextDesc" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-btn-b ui-btn-inline"></a> 
+                <a href="#desc2" id="nextDesc" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-notext ui-btn-b ui-btn-inline"></a> 
+                <br/>
+                <a href="#home"><small>Saltar</small></a>
+            </div>
+        </div>
+
+        <div data-role="page" id="desc2">
+            <div data-role="content">
+                <img src="img/heart.png" id="heart-icon">
+                <h1 class="htitles">Caracteristica 2</h1>
+            </div>
+            <div id="descripcion">
+                <p>Esta es una breve descripción de las características principales de la App</p>
+                <a href="#desc1" id="nextDesc" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-btn-b ui-btn-inline"></a> 
+                <a href="#desc3" id="nextDesc" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-notext ui-btn-b ui-btn-inline"></a> 
+                <br/>
+                <a href="#home"><small>Saltar</small></a>
+            </div>
+        </div>
+
+        <div data-role="page" id="desc3">
+            <div data-role="content">
+                <img src="img/heart.png" id="heart-icon">
+                <h1 class="htitles">Caracteristica 3</h1>
+            </div>
+            <div id="descripcion">
+                <p>Esta es una breve descripción de las características principales de la App</p>
+                <a href="#desc2" id="nextDesc" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-btn-b ui-btn-inline"></a> 
+                <a href="#desc4" id="nextDesc" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-notext ui-btn-b ui-btn-inline"></a> 
+                <br/>
+                <a href="#home"><small>Saltar</small></a>
+            </div>
+        </div>
+
+        <div data-role="page" id="desc4">
+            <div data-role="content">
+                <img src="img/heart.png" id="heart-icon">
+                <h1 class="htitles">Caracteristica 4</h1>
+            </div>
+            <div id="descripcion">
+                <p>Esta es una breve descripción de las características principales de la App</p>
+                <a href="#desc3" id="nextDesc" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-btn-b ui-btn-inline"></a> 
+                <br/>
+                <a href="#home"><small>¡Entendido!</small></a>
+            </div>
+        </div>
+
+    <!-- **************** HOME // MIS FINDS ***************** -->
+
+        <div data-role="page" id="home">
+
+        <div data-role="header" id="header" data-position="fixed">
+            <a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-transition="slidedown"></a>           
+            <h4 id="subtitle">MIS FINDS</h4>
+            <a href="#profile" class="ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all" data-transition="slide"></a>   
+        </div>
+
+        <div data-role="content">
+            <div id="last-find-container">
+                <div id="publication-time">
+                    Hace dos horas
+                </div>
+            </div>
+            <div class="home-last-find">
+                <h4 id="find-name">Nombre</h4>
+                <li id="find-place">Lugar de almacenamiento</li>
+            </div>
+        </div>
+        <ul>
+            <div id="home-finds">
+                <div id="find-img-container">
+                    <img src="img/find.jpg" id="find-img">
+                </div>
+                <div id="find-text-container">
+                    <h4 id="find-name">Nombre</h4>
+                    <li id="find-place">Lugar de almacenamiento</li>
+                </div>
+            </div>
+
+            <div id="home-finds">
+                <div id="find-img-container">
+                    <img src="img/find.jpg" id="find-img">
+                </div>
+                <div id="find-text-container">
+                    <h4 id="find-name">Nombre dos</h4>
+                    <li id="find-place">Lugar de almacenamiento dos</li>
+                </div>
+            </div>
+
+            <div id="home-finds">
+                <div id="find-img-container">
+                    <img src="img/find.jpg" id="find-img">
+                </div>
+                <div id="find-text-container">
+                    <h4 id="find-name">Nombre tres</h4>
+                    <li id="find-place">Lugar de almacenamiento tres</li>
+                </div>
+            </div>
+
+            <div id="home-finds">
+                <div id="find-img-container">
+                    <img src="img/find.jpg" id="find-img">
+                </div>
+                <div id="find-text-container">
+                    <h4 id="find-name">Nombre cuatro</h4>
+                    <li id="find-place">Lugar de almacenamiento cuatro que puede ser largo</li>
+                </div>
+            </div>
+
+            <div id="home-finds">
+                <div id="find-img-container">
+                    <img src="img/find.jpg" id="find-img">
+                </div>
+                <div id="find-text-container">
+                    <h4 id="find-name">Nombre cuatro</h4>
+                    <li id="find-place">Lugar de almacenamiento cuatro que puede ser largo</li>
+                </div>
+            </div>
+
+            <div id="home-finds">
+                <div id="find-img-container">
+                    <img src="img/find.jpg" id="find-img">
+                </div>
+                <div id="find-text-container">
+                    <h4 id="find-name">Nombre cuatro</h4>
+                    <li id="find-place">Lugar de almacenamiento cuatro que puede ser largo</li>
+                </div>
+            </div>
+
+            <div id="home-finds">
+                <div id="find-img-container">
+                    <img src="img/find.jpg" id="find-img">
+                </div>
+                <div id="find-text-container">
+                    <h4 id="find-name">Nombre cuatro</h4>
+                    <li id="find-place">Lugar de almacenamiento cuatro que puede ser largo</li>
+                </div>
+            </div>
+        </ul>   
+        <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-position="fixed">
+            <div data-role="navbar" class="ui-navbar ui-mini" role="navigation">
+                <ul class="ui-grid-b">
+                    <li class="ui-block-b">
+                        <a href="#map" data-icon="location" data-iconpos="top" data-theme="b" data-inline="true">
+                            <span class="ui-btn-text">Mapa</span>
+                        </a>
+                    </li>
+                    
+                    <li class="ui-block-b">
+                        <a href="#newfind" data-icon="heart" data-iconpos="top" data-theme="b" data-inline="true">
+                            <span class="ui-btn-text">Nuevo</span>
+                        </a>
+                    </li>
+                    
+                    <li class="ui-block-b">
+                        <a href="#ra" data-icon="camera" data-iconpos="top" data-theme="b" data-inline="true">
+                            <span class="ui-btn-text">RA</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+
+        </div>
+
+         <!-- **************** MENU ***************** -->
+
+        <div data-role="page" id="menu">
+            <div data-role="header" id="header" data-position="fixed">
+                <a href="#home" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all" data-transition="slideup"></a>       
+                <h4 id="subtitle">MENU</h4>
+                <a href="#profile" class="ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all" data-transition="slide"></a>   
+            </div>
+            <div data-role="content" id="menu-container">
+                <div id="menu-element">
+                    <a href="home" id="menu-title"><img src="img/finds.png" id="menu-icon">Mis Finds</a>
+                </div>
+                <div id="menu-element">
+                    <a href="#newfind" id="menu-title"><img src="img/add.png" id="menu-icon">Nuevo Find</a>
+                </div>
+                <div id="menu-element">
+                    <a href="#map" id="menu-title"><img src="img/map.png" id="menu-icon"> Mapa</a>
+                </div>
+                <div id="menu-element">
+                    <a href="#RA" id="menu-title"><img src="img/camera.png" id="menu-icon">RA</a>
+                </div>
+                <div id="menu-element">
+                    <a href="#about" id="menu-title"><img src="img/about.png" id="menu-icon">Acerca de</a>
+                </div> 
+            </div>
+        </div>
+
+
+        <!-- **************** PROFILE ***************** -->
+
+
+        <div data-role="page" id="profile">
+            <div data-role="header" id="header" data-position="fixed">
+                <a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-transition="slideup" data-direction="reverse"></a>       
+                <h4 id="subtitle">MI PERFIL</h4>
+                    <a href="#main" data-icon="power" class="ui-btn-right" id="btnSalir" data-role="button">Salir</a>
+            </div>
+
+            <div data-role="content">
+                <div id="profile-header">
+                     <img src="img/profile.jpg" id="profile-pic"> 
+                     <h2 id="profile-username">SirCamus</h2>         
+                </div>
+                <div id="profile-icons">
+                    <a href="#" id="aText"><img src="img/fb-icon.png" class="p-icon"></a>
+                    <a href="#" id="aText"><img src="img/tw-icon.png" class="p-icon"></a>
+                    <a href="#" id="aText"><img src="img/add.png" class="p-icon"></a>
+                </div>
+            </div>
+
+            <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo" data-position="fixed">
+            <div data-role="navbar" class="ui-navbar ui-mini" role="navigation">
+                <ul class="ui-grid-b">
+                    <li class="ui-block-b">
+                        <a href="#map" data-icon="location" data-iconpos="top" data-theme="b" data-inline="true">
+                            <span class="ui-btn-text">Mapa</span>
+                        </a>
+                    </li>
+                    
+                    <li class="ui-block-b">
+                        <a href="#newfind" data-icon="heart" data-iconpos="top" data-theme="b" data-inline="true">
+                            <span class="ui-btn-text">Nuevo</span>
+                        </a>
+                    </li>
+                    
+                    <li class="ui-block-b">
+                        <a href="#RA" data-icon="camera" data-iconpos="top" data-theme="b" data-inline="true">
+                            <span class="ui-btn-text">RA</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        </div>
+
+
+
+        <!-- **************** NEW FIND ***************** -->
+
+    <div data-role="page" id="newfind">
+
+        <div data-role="header" id="header" data-position="fixed">
+            <a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-transition="slidedown"></a> 
+            <h4 id="subtitle">NUEVO FIND</h4>
+            <a href="#profile" class="ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all" data-transition="slide"></a>   
+        </div>
+
+        <div data-role="content">
+        <form>
+        Nombre:
+            <input type="text" id="newfind-name" maxlength="50">
+            <div id="camera">
+
+                <button class="camera-control" onclick="capturePhoto();">Tomar Foto</button>
+                <div style="text-align:center;margin:20px;">
+                    <img id="cameraPic" src="" style="width:auto;max-height:120px;"></img>
+                </div>
+                <button href="#" class="camera-control" onclick="GetLocation();">Definir ubicacion</button>
+                Tu ubicación Actual: <p id="geolocation"></p>
+            </div>
+            <input type="submit" value="GUARDAR">
+        </form>    
+        <br/>
+        <a href="#home" id="cancel-link" class="center"> Cancelar </a>
+        </div>
+    </div>
+
+
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
