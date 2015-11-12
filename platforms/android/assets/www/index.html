@@ -19,13 +19,13 @@
 
         <div data-role="page" id="main">
             <div data-role="content">
-                <img src="img/logo.png" alt="Find me" id="logo">
+                <img src="img/logo.png" alt="Find me" id="logo"/>
             </div>
             <div data-role="content" class="login">
-                <form id="login-form" method="POST" action="">
-                    <input type="text" id="user" name="id" value="" placeholder="Usuario">
-                    <input type="password" id="pass" name="pass" value="" placeholder="Contraseña">
-                    <input type="submit" value="ENTRAR" id="btnEntrar"> 
+                <form id="login-form">
+                    <input type="text" id="user" name="id" value="" placeholder="Usuario"/>
+                    <input type="password" id="pass" name="pass" value="" placeholder="Contraseña"/>
+                    <input type="submit" value="ENTRAR" id="btnEntrar"/> 
                 </form>
                 <br/>
                 <a href="#registro" id="registrarse" data-transition="slide">Registrarse</a>
@@ -40,13 +40,13 @@
             </div>
             <div data-role="content" class="reg-form">
             <p class="textNrml">¡Llena todos los campos para comenzar la aventura!</p>
-            <form id="registro-form" method="POST" action="">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" data-clear-btn="true">
-                <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" data-clear-btn="true">
-                <input type="email" name="email" id="email" placeholder="Email" data-clear-btn="true">
-                <input type="password" name="contra" id="contra" placeholder="Contraseña" data-clear-btn="true">
+            <form id="registro-form">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" data-clear-btn="true"/>
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" data-clear-btn="true"/>
+                <input type="email" name="email" id="email" placeholder="Email" data-clear-btn="true"/>
+                <input type="password" name="contra" id="contra" placeholder="Contraseña" data-clear-btn="true"/>
                 <p/>
-                <input type="submit" id="btnReg" value="CONTINUAR" data-transition="slide">
+                <input type="submit" id="btnReg" value="CONTINUAR" data-transition="slide"/>
                 <a href="#bienvenido">.</a>
             </form>
             </div>
